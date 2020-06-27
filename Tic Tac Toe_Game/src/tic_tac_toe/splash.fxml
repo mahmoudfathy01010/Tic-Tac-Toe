@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="200.0" prefHeight="656.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom right, BLACK,BurlyWood); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" styleClass="LightCyan" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <AnchorPane prefHeight="38.0" prefWidth="786.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="135.0" layoutY="1.0" text="Copyright © 2010 by Wily E. Coyote" textFill="#f5f5f5" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" style="-fx-background-color: Transperent;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="104.0" prefWidth="786.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="logolabel" alignment="CENTER" contentDisplay="CENTER" layoutY="1.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="786.0" text="Games Store" textFill="#f8eee8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="Monospaced Bold" size="53.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="543.0" prefWidth="538.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="mem_pane" layoutX="-3.0" layoutY="180.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="198.0" style="-fx-background-color: linear-gradient(to bottom right, white,DarkSlateGrey); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;">
+               <children>
+                  <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="185.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="88.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ImageView fx:id="second_f" fitHeight="94.0" fitWidth="85.0" opacity="0.4" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="first_f" fitHeight="115.0" fitWidth="81.0" layoutX="5.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fx:id="first_b" fitHeight="115.0" fitWidth="81.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                        <ImageView fx:id="second_b" fitHeight="69.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+            <AnchorPane layoutX="356.0" layoutY="180.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="211.0" style="-fx-background-color: linear-gradient(to bottom right, BLACK,DarkSlateGrey); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" fx:id="xo_pane">
+               <children>
+                  <ImageView fitHeight="76.0" fitWidth="66.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" fx:id="x_im" />
+                  <ImageView fx:id="o_im" fitHeight="76.0" fitWidth="66.0" layoutX="115.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="227.0" layoutY="497.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="exit_btn" layoutX="9.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="46.0" prefWidth="93.0" style="-fx-background-color: linear-gradient(to bottom right, BLACK,SaddleBrown)6; -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" text="EXIT" textFill="#d7d0d0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="1.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="360.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="209.0">
+               <children>
+                  <Button layoutX="45.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="210.0" style="-fx-background-color: linear-gradient(to bottom right, BLACK,DarkSlateGrey)6; -fx-border-color: BurlyWood; -fx-border-width: 7 7 7  7;" text="Tic Tack Toe" textFill="#cdbfc8" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0" fx:id="xo_btn">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="416.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="196.0" style="-fx-background-color: pink;">
+               <children>
+                  <Button fx:id="memory_btn" layoutX="38.0" layoutY="18.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="196.0" style="-fx-background-color: linear-gradient(to bottom right, white,DarkSlateGrey); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" text="Memory game" textFill="#724224" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

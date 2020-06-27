@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="200.0" prefHeight="656.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom right, BLACK,DarkSlateGrey); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" styleClass="LightCyan" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <AnchorPane id="anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="601.0" style="-fx-background-color: Transperent;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="147.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="98.0" prefWidth="311.0" style="-fx-background-color: transperent; -fx-border-width: 5 5 5 5; -fx-border-color: linear-gradient(to bottom right, WHITE, CYAN); -fx-border-radius: 20 20 20 20;">
+               <children>
+                  <Label fx:id="message_label" alignment="CENTER" layoutX="27.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="68.0" prefWidth="193.0" textFill="#e1dada" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="100.0" prefHeight="112.0" prefWidth="163.0" style="-fx-background-color: transperent;">
+               <children>
+                  <ImageView fx:id="imageView1" fitHeight="63.0" fitWidth="65.0" layoutX="10.0" layoutY="36.0" />
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="39.0" opacity="0.0" prefHeight="58.0" prefWidth="46.0" text="0" textFill="#fff3f3" fx:id="x_score_count">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="17.0" opacity="0.0" prefHeight="34.0" prefWidth="163.0" text="X score " AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="x_score_label">
+                     <font>
+                        <Font name="Monospaced Bold" size="28.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#d0c7c7" />
+                              <Stop color="WHITE" offset="0.1839464882943144" />
+                              <Stop color="#903558" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="466.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="112.0" prefWidth="163.0" style="-fx-background-color: transperent;">
+               <children>
+                  <ImageView fx:id="imageView2" fitHeight="63.0" fitWidth="67.0" layoutX="22.0" layoutY="37.0" />
+                  <Label fx:id="o_score_label" alignment="CENTER" layoutX="-2.0" layoutY="-2.0" opacity="0.0" prefHeight="34.0" prefWidth="163.0" text="O score " textAlignment="CENTER">
+                     <font>
+                        <Font name="Monospaced Bold" size="28.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#d0c7c7" />
+                              <Stop color="#eaeddad6" offset="0.12709030100334448" />
+                              <Stop color="WHITE" offset="0.1839464882943144" />
+                              <Stop color="#b8ab67d6" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="o_score_count" alignment="CENTER" layoutX="87.0" layoutY="40.0" opacity="0.0" prefHeight="58.0" prefWidth="46.0" text="0" textFill="#fff3f3">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="400.0" style="-fx-background-color: Transperent;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane id="grid" fx:id="mygrid" layoutX="180.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: transperent; -fx-stroke-line: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="153.0" prefWidth="126.0">
+                     <children>
+                        <Button fx:id="btn1" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-border-color: Turquoise; -fx-background-color: transperent; -fx-border-width: 0 1 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <effect>
+                              <Glow level="0.19" />
+                           </effect>
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Button fx:id="btn2" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: Turquoise; -fx-border-width: 0 1 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button fx:id="btn3" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: turquoise; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btn4" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: Turquoise; -fx-border-width: 0 1 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btn5" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: Turquoise; -fx-border-width: 0 1 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="btn6" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: turquoise; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="btn7" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-color: turquoise; -fx-border-width: 0 1 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="btn8" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-width: 0 1 0 0; -fx-border-color: turquoise;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="btn9" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(#FF5555 40%, white 70%,  #fe1493 20%,white 40%); -fx-background-color: transperent; -fx-border-width: 0  0 0 0; -fx-border-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="64.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" style="-fx-background-color: transperent;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" style="-fx-background-color: transperent;" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane fx:id="logo_pane" prefHeight="73.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="logo_label" alignment="CENTER" contentDisplay="CENTER" layoutX="-15.0" layoutY="-7.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="800.0" text="TIC TAC TOE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="-15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="-7.0">
+               <font>
+                  <Font name="Monospaced Bold" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.11057692307692307" endY="0.20673076923076922" startY="1.0">
+                     <stops>
+                        <Stop color="#074d2ecf" />
+                        <Stop color="#084d2e00" offset="0.007434944237918215" />
+                        <Stop color="#008ecf" offset="0.5130111524163569" />
+                        <Stop color="#55ffff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <AnchorPane fx:id="image_pane" layoutX="687.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="59.0" style="-fx-background-color: tranperent;" AnchorPane.bottomAnchor="-114.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="64.0">
+               <children>
+                  <ImageView fx:id="music_image" fitHeight="53.0" fitWidth="54.0" layoutX="3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="home_image" fitHeight="62.0" fitWidth="53.0" layoutX="3.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="80.0" layoutX="-32.0" layoutY="18.0" opacity="0.0" rotate="54.0" startX="42.0" startY="10.0" stroke="#e81919" strokeWidth="3.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

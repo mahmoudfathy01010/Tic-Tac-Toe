@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="200.0" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom right, WHITE,DarkSlateGrey); -fx-border-color: BurlyWood; -fx-border-width: 7 7 7 7;" styleClass="LightCyan" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <AnchorPane prefHeight="19.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="135.0" layoutY="1.0" textFill="#f5f5f5" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane fx:id="mainancban" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="759.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="52.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="645.0" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="401.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="98.0" prefWidth="305.0" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fx:id="replay_image" fitHeight="50.0" fitWidth="55.0" layoutX="126.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" layoutX="-2.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="305.0" text="Reply" textFill="#111010" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fx:id="home" fitHeight="56.0" fitWidth="57.0" layoutX="221.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" layoutX="131.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="235.0" text="Home" textFill="#0a0a0a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="save_image" fitHeight="50.0" fitWidth="55.0" layoutX="56.0" layoutY="35.0" opacity="0.66" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.27703857421875" minWidth="10.0" prefWidth="265.7701721191406" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.66058349609375" minWidth="10.0" prefWidth="379.2298278808594" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <AnchorPane layoutX="155.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="455.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <ImageView fx:id="tied" fitHeight="335.0" fitWidth="298.0" layoutX="84.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.topAnchor="-4.0" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="288.0" prefHeight="99.0" prefWidth="757.0" text="Game Is tie!" textFill="#ffcd00">
+               <font>
+                  <Font size="65.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" style="-fx-background-color: Transperent;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="333.0" prefWidth="120.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="logo_label" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="-22.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="800.0" text="Memory Game " textFill="#2a2c2c" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Monospaced Bold" size="53.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
